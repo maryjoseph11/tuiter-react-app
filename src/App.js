@@ -6,9 +6,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <h1>
           Welcome to A1 of Web Development for Spring 2023
-        </p>
+        </h1>
+        <h2>This is a branch for assignment 2</h2>
         <a
           className="App-link"
           href="https://reactjs.org"
