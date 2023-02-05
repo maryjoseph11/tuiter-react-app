@@ -1,0 +1,99 @@
+body{
+    font-family:"Arial";
+    background-color: black;
+    color: white;
+}
+.wd-box1{
+    border: solid 1px rgb(47, 51, 54);
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 12px;
+}
+
+.wd-box2{
+    border: solid 1px rgb(47, 51, 54);
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top:0px;
+}
+
+.wd-box3{
+    border: solid 1px rgb(47, 51, 54);
+    margin-left: 50px;
+    margin-right: 830px;
+    padding-top:0px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.wd-paddingfour{
+    margin-left: 4px;
+    margin-top: 0px;
+}
+
+.wd-fonttwenty{
+    font-size: 20px;
+}
+
+.wd-fontfifteen{
+    font-size: 15px;
+}
+
+
+.wd-fontthirteen{
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    padding-bottom:12px;
+}
+
+.wd-rounded {
+    border-radius: 50%
+}
+
+.wd-rounded1{
+    border-radius: 30px;
+}
+
+.wd-paddingtwelve{
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.wd-righttwelve{
+    margin-right: 12px;
+}
+
+.wd-paddingfifty{
+    margin-left: 50px;
+    margin-top: 12px;
+}
+
+.wd-bottomtwelve{
+    padding-bottom:12px;
+}
+
+.wd-widthtwelve{
+    max-width: 506px;
+    min-width: 500px;
+    text-align: left;
+}
+
+.wd-paddingforty{
+    margin-top: 0px;
+}
+
+.wd-paddingfifty1{
+    margin-left: 50px;
+    margin-top: 12px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-paddingfifty2{
+    margin-left: 100px;
+    margin-top: 12px;
+    color: rgb(110, 118, 125);
+}
+
+.fa-heart{
+    color:red;
+}

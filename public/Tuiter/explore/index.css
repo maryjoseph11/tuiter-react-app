@@ -1,0 +1,90 @@
+body{
+    font-family:"Arial";
+    background-color: black;
+    color: white;
+}
+
+.wd-nav-tabs{
+    color: rgb(110, 118, 125);
+    padding:10px;
+    display: flex;
+    width:100%;
+    justify-content:space-between;
+}
+
+.wd-input-placeholder{
+    border-radius: 80px;
+    margin-left: 25px;
+    width: 80%;
+}
+
+.wd-nav-tabs li{
+    font-size: 15px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 16px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.wd-nav-tabs .wd-selected{
+    border-bottom: solid 4px rgb(29,161,242);
+    color: rgb(29,161,242);
+}
+
+.wd-suggested {
+    margin-left: 16px;
+    border: 1px solid grey;
+}
+
+.wd-suggested .wd-tuits-C{
+    margin-left: 4px;
+}
+
+.wd-suggested .wd-tuits-D{
+    border-top: solid 1px rgb(110, 118, 125);
+    padding-bottom:5px;
+}
+
+.wd-leftmargin{
+    margin-left: 4px;
+}
+
+.wd-fontthirteen{
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-fontfifteen{
+    font-size: 20px;
+    padding-top: 0px;
+}
+
+.wd-paddingbottom{
+    padding-bottom: 5px;
+}
+
+.wd-paddingtop{
+    padding-top: 2px;
+}
+
+.wd-rounded1{
+    border-radius: 30px;
+}
+
+.wd-gearsetting{
+    font-size: 20px;
+    margin-left: 1400px;
+
+}
+
+.wd-suggesteda{
+    margin-left: 16px;
+    margin-right: 1px;
+    border: 1px solid grey;
+}
+
+
+
+
+
