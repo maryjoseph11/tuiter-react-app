@@ -1,0 +1,59 @@
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.icon-blue{
+    color: blue!important;
+}
+
+.color-grey{
+    color:grey!important;
+}
+.font-weight-bold{
+    font-weight: bold!important;
+}
+
+.wd-rounded1{
+    border-radius: 30px;
+}
+
+.wd-nav-tabs{
+    color: rgb(110, 118, 125);
+    display: flex;
+    width:100%;
+    justify-content:space-between;
+}
+
+.wd-nav-tabs .wd-selected{
+    border-bottom: solid 2px rgb(29,161,242);
+}
+
+.list-group .bg-secondary{
+    background-color: lightgrey!important;
+}
+
+.container1 {
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
