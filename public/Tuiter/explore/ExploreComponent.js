@@ -14,12 +14,12 @@ const ExploreComponent = () => {
                     </div>
             </div>
 
-            <ul class="list-group list-group-horizontal mt-2" style="width:100%">
-                <li class="list-group-item border-bottom-0"> For You</li>
-                <li class="list-group-item border-top-0 border-right-0 icon-blue"> Trending</li>
-                <li class="list-group-item border-top-0 border-right-0 icon-blue"> News</li>
-                <li class="list-group-item border-top-0 border-right-0 icon-blue"> Sports</li>
-                <li class="list-group-item border-top-0 border-right-0 border-left-0 icon-blue"> Entertainment</li>
+            <ul class="list-group list-group-horizontal mt-2 wd-displaymenu" style="width:100%">
+                <li class="list-group-item border-bottom-0 wd-displayitemmenu"> For You</li>
+                <li class="list-group-item border-top-0 border-right-0 icon-blue wd-displayitemmenu"> Trending</li>
+                <li class="list-group-item border-top-0 border-right-0 icon-blue wd-displayitemmenu"> News</li>
+                <li class="list-group-item border-top-0 border-right-0 icon-blue wd-displayitemmenu"> Sports</li>
+                <li class="list-group-item border-top-0 border-right-0 border-left-0 icon-blue wd-displayitemmenu"> Entertainment</li>
             </ul>
 
             <div class="mt-2 container1">

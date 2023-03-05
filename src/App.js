@@ -1,26 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import HelloWorld from "./Labs/a6/hello-world.js";
+import Labs from './Labs';
+import Tuiter from './tuiter';
+import Nav from './nav.js';
+import {BrowserRouter} from 'react-router-dom';
+import {Route,Routes} from 'react-router';
+import {Link} from "react-router-dom";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-          Welcome to A1 of Web Development for Spring 2023
-        </h1>
-        <h2>This is a branch for assignment 2</h2>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return(
+  <BrowserRouter>
+      <div className="container">
+      <h1>Welcome to Web Dev</h1>
+
+      <Routes>
+        <Route path = "/hello" element={<HelloWorld/>}/>
+        <Route index element={<Labs/>}/>
+        <Route path = "/tuiter/*" element={<Tuiter/>}/>
+      </Routes>
+
+      </div>
+  </BrowserRouter>
+  )
 }
 
 export default App;

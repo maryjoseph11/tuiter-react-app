@@ -1,0 +1,32 @@
+.wd-border{
+    border: 0.5px  solid;
+    border-color: rgb(211,211,211);
+}
+
+.wd-black{
+    color:black;
+}
+
+.wd-grey{
+    color:grey;
+}
+
+.wd-blue{
+    color:rgb(0, 127, 255);
+}
+
+.wd-right{
+    margin-right: 30px;
+}
+
+.wd-left{
+    margin-left: 107px;
+}
+
+.wd-padbottom2{
+    padding-bottom: 10%;
+}
+
+.wd-alignr{
+    flexDirection: 'row-reverse';
+}

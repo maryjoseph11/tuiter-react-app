@@ -126,3 +126,12 @@ body{
     color:white!important;
 }
 
+
+.wd-displaymenu {
+    display: inline-block;
+}
+
+.wd-displayitemmenu{
+    text-align: center;
+}
+
