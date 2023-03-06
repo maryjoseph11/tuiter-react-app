@@ -27,6 +27,10 @@
     padding-bottom: 10%;
 }
 
-.wd-alignr{
-    flexDirection: 'row-reverse';
+.wd-moveright{
+    float:right;
+}
+
+.wd-fontnorm{
+    font-style: normal;
 }

@@ -8,6 +8,7 @@ import ConditionalOutput from "./conditional-output";
 function Assignment6() {
     return(
     <div>
+        <h1>Welcome to Web Dev</h1>
         <Link to="/">Lab</Link> |
         <Link to="/hello">Hello</Link> |
         <Link to="/tuiter/*">Tuiter</Link>

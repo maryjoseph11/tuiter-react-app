@@ -11,7 +11,7 @@ function App() {
   return(
   <BrowserRouter>
       <div className="container">
-      <h1>Welcome to Web Dev</h1>
+      
 
       <Routes>
         <Route path = "/hello" element={<HelloWorld/>}/>
