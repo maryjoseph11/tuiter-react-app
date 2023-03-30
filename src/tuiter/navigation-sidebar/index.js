@@ -1,11 +1,9 @@
 import React from "react";
 
-const NavigationSidebar = (
-    {
-       active = 'explore'
-     }
-) => {
- return (
+const NavigationSidebar = ( {
+    active
+    }) => {
+    return(
     <div className="list-group">
          <a className="list-group-item">Tuiter</a>
          <a className={`list-group-item
@@ -15,7 +13,7 @@ const NavigationSidebar = (
          </a>
          </a>
          <a className={`list-group-item
-                        ${active === 'explore'?'active':''}`}>
+                        ${active === 'explores'?'active':''}`}>
          <a href="/Tuiter/explores">
            Explore
          </a>
@@ -38,7 +36,9 @@ const NavigationSidebar = (
          </a>
          <a className={`list-group-item
                         ${active === 'profile'?'active':''}`}>
+         <a href="/Tuiter/ProfileScreen/ProfileComponent.js">
            Profile
+         </a>
          </a>
          <a className={`list-group-item
                         ${active === 'more'?'active':''}`}>

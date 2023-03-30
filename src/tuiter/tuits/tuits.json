@@ -1,0 +1,66 @@
+[
+  {
+    "_id": "123",
+    "topic": "Space",
+    "userName": "SpaceX",
+    "verified": false,
+    "liked": true,
+    "handle": "ReactJS",
+    "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed. Adding extra information to make sure the change has occured.",
+    "time": "2h",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "attachments": {
+      "video": "unKvMC3Y1kI"
+    },
+    "logo-image": "https://pbs.twimg.com/profile_images/446356636710363136/OYIaJ1KK.png",
+    "avatar-image": "https://pbs.twimg.com/profile_images/446356636710363136/OYIaJ1KK.png",
+    "stats": {
+      "comments": 123,
+      "retuits": 234,
+      "likes": 345
+    }
+  },
+
+  { "_id": 234,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "verified": false,
+    "liked": true,
+    "handle": "spacex",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "time": "2h",
+    "image": "relativityspace.png",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "attachments": {
+      "image": ""
+    },
+    "logo-image": "https://pbs.twimg.com/profile_images/446356636710363136/OYIaJ1KK.png",
+    "avatar-image": "https://pbs.twimg.com/profile_images/446356636710363136/OYIaJ1KK.png",
+    "tuits": "120K",
+    "stats": {
+      "comments": 123,
+      "retuits": 234,
+      "likes": 345
+    }
+  },
+
+  { "_id": 345,
+    "topic": "Energy",
+    "userName": "Tesla",
+    "verified": true,
+    "liked": true,
+    "handle": "TTeslaa",
+    "published-date": "2020-12-10",
+    "title": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
+    "time": "4d",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "logo-image": "https://static01.nyt.com/images/2020/05/20/business/media/20xp-joerogan/20xp-joerogan-mobileMasterAt3x.jpg",
+    "avatar-image": "https://static01.nyt.com/images/2020/05/20/business/media/20xp-joerogan/20xp-joerogan-mobileMasterAt3x.jpg",
+    "tuits": "123K",
+    "stats": {
+      "comments": 123,
+      "retuits": 234,
+      "likes": 345
+    }
+  }
+]
