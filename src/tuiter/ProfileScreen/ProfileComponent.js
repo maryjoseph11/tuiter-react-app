@@ -15,7 +15,7 @@ const ProfileComponent = () => {
                     </div>
                     <div className="col-3">
                         <div className="row">
-                            <span> <strong>{profile.firstName} {profile.lastName}</strong></span>
+                            <span> {profile.firstName} {profile.lastName}</span>
                         </div>
                         <div className="row">
                             <span className="text-muted"> 5196 Tweets </span>
@@ -28,11 +28,11 @@ const ProfileComponent = () => {
             </div>
             <div className="mt-2">
                 <img src={profile.profilePicture} className="wd-profilePicture" alt=""></img>
-                <Link to="/tuiter/edit-profile"><button type="button" className="btn btn-outline-dark rounded-4 float-end">Edit Profile</button></Link>
+                
             </div>
             <div>
                 <div className="row">
-                    <span> <strong>{profile.firstName} {profile.lastName}</strong></span>
+                    <span> {profile.firstName} {profile.lastName}</span>
                     <span className="text-muted"> @{profile.handle} </span>
                     <span className="mt-2"> {profile.bio}</span>
                     <div className="row mt-2">
@@ -48,10 +48,10 @@ const ProfileComponent = () => {
                     </div>
                     <div className="row mt-2">
                         <div className="col-3">
-                            <span> <strong> {profile.followingCount}</strong></span><span className="text-muted"> Following</span>
+                            <span>  {profile.followingCount}</span><span className="text-muted"> Following</span>
                         </div>
                         <div className="col-3">
-                            <span> <strong> {profile.followersCount} </strong></span><span className="text-muted"> Followers</span>
+                            <span>  {profile.followersCount} </span><span className="text-muted"> Followers</span>
                         </div>
                     </div>
 
