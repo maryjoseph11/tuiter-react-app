@@ -18,7 +18,7 @@ const ProfileComponent = () => {
                             <span> {profile.firstName} {profile.lastName}</span>
                         </div>
                         <div className="row">
-                            <span className="text-muted"> 5196 Tweets </span>
+                            <span className="text-muted"> 1234 Tweets </span>
                         </div>
                     </div>
                 </div>
@@ -28,30 +28,29 @@ const ProfileComponent = () => {
             </div>
             <div className="mt-2">
                 <img src={profile.profilePicture} className="wd-profilePicture" alt=""></img>
-                
             </div>
             <div>
                 <div className="row">
                     <span> {profile.firstName} {profile.lastName}</span>
-                    <span className="text-muted"> @{profile.handle} </span>
+                    <span> @{profile.handle} </span>
                     <span className="mt-2"> {profile.bio}</span>
                     <div className="row mt-2">
                         <div className="col-3">
-                            <i className="fa fa-solid fa-location-arrow"></i><span className="text-muted"> {profile.location} </span>
+                            <i className="fa fa-solid fa-location-arrow"></i><span > {profile.location} </span>
                         </div>
                         <div className="col-4">
-                            <i className="fa fa-solid fa-calendar"></i><span className="text-muted"> Born {profile.dateOfBirth} </span>
+                            <i className="fa fa-solid fa-calendar"></i><span> Born {profile.dateOfBirth} </span>
                         </div>
                         <div className="col-3">
-                            <i className="fa fa-solid fa-briefcase"></i><span className="text-muted"> Joined {profile.dateJoined} </span>
+                            <i className="fa fa-solid fa-briefcase"></i><span> Joined {profile.dateJoined} </span>
                         </div>
                     </div>
                     <div className="row mt-2">
                         <div className="col-3">
-                            <span>  {profile.followingCount}</span><span className="text-muted"> Following</span>
+                            <span>  {profile.followingCount}</span><span> Following</span>
                         </div>
                         <div className="col-3">
-                            <span>  {profile.followersCount} </span><span className="text-muted"> Followers</span>
+                            <span>  {profile.followersCount} </span><span> Followers</span>
                         </div>
                     </div>
 
