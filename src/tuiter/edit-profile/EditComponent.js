@@ -40,7 +40,7 @@ const EditComponent = () => {
             <div>
                 <div className="row mb-2 wd-paddingbottom">
                     <div>
-                        <Link to="/tuiter/profile">
+                        <Link to="/tuiter/profiles">
                         <button type="button" className="btn-outline-dark wd-grey">
                             Back
                         </button>
@@ -109,7 +109,7 @@ const EditComponent = () => {
             </div>
 
             <div className=" wd-padding wd-paddingbottom">
-                <Link to="/tuiter/profile">
+                <Link to="/tuiter/profiles">
                 <button type="button" onClick={() => savedInformation()} class="btn-outline-dark wd-grey">
                     Save
                 </button>
