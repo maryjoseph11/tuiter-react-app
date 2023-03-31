@@ -1,12 +1,22 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {clickLike} from "./tuits-reducer";
-
+import {useState} from 'react';
+import {updateLike} from "./tuits-reducer";
 const TuitStats = ({tuit}) => {
+    const [isActive, setIsActive] = useState(false);
+
     const dispatch = useDispatch();
+
     const likeClickHandler = () => {
-        dispatch({type: 'clickLike', tuit});
-    };
+            dispatch(
+                  updateLike({
+                    ...tuit,
+                    liked: !tuit.liked,
+                    likes: tuit.liked ? tuit.stats.likes - 1 : tuit.stats.likes + 1,
+                  })
+                );
+    }
+
     return (
 
     <div className="row mt-2">
@@ -18,17 +28,11 @@ const TuitStats = ({tuit}) => {
             <i class="bi bi-arrow-repeat"></i>
             {tuit.stats.retuits}
         </div>
-        <div className="col" onClick={likeClickHandler}>
-            {
-                tuit.liked &&
-                <i className="bi bi-heart me-2"
-                   style={{color: tuit.liked ? 'red': "white"}}></i>
-            }
-            {
-                !tuit.liked &&
-                <i className="bi bi-heart me-2"></i>
-            }
-            {tuit.stats.likes}
+        <div className="col">
+            <i onClick={likeClickHandler}
+            className='bi bi-heart me-2'
+            style={{"color": `${(tuit.liked === true) ? "red" : "gray"}`}}></i>
+            <span className='ms-1 wd-gray-color'>{tuit.stats.likes}</span>
         </div>
         <div className="col">
             <i class="bi bi-share me-2"></i>

@@ -1,16 +1,28 @@
-.wd-profilePicture {
-    height: 68px;
-    width: 63px;
+.wd-banner {
+    height: 250px;
+    width: 100%;
+}
+
+.wd-profile{
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
     margin-left: 10px;
     position: relative;
-    bottom: 34px;
-    border: black;
-    border-radius: 62px;
+    bottom: 50px;
+    border: white;
     border-style: solid;
 }
 
-.wd-bannerPicture {
-    height: 150px;
-    width: 100%;
+.wd-grey{
+    color: grey;
+}
+
+.wd-tabs {
+   margin-left: 16px;
+}
+
+.wd-padding{
+    padding-top: 10px;
 }
 

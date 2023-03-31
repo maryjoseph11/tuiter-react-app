@@ -36,7 +36,7 @@ const NavigationSidebar = ( {
          </a>
          <a className={`list-group-item
                         ${active === 'profile'?'active':''}`}>
-         <a href="/Tuiter/ProfileScreen/ProfileComponent.js">
+         <a href="/Tuiter/profile">
            Profile
          </a>
          </a>

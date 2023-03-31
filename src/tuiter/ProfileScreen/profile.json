@@ -1,14 +1,14 @@
 {
-  "firstName": "Jose",
-  "lastName": "Annunziato",
-  "handle": "jannunzi",
-  "profilePicture": "NASA.png",
-  "bannerPicture": "NASA.png",
-  "bio":  "Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.",
-  "website": "youtube.com/webdevtv",
+  "firstName": "Mary",
+  "lastName": "Joseph",
+  "handle": "maryj11",
+  "profilePicture": "PupPicture.jpeg",
+  "bannerPicture": "picture2.jpeg",
+  "bio":  "Java Developer, Everything- Coffee and Book Enthusiast",
+  "website": "youtube.com/maryj1",
   "location": "Boston, MA",
-  "dateOfBirth": "1968-07-08",
-  "dateJoined": "4/2009",
-  "followingCount": 312,
-  "followersCount": 180
+  "dateOfBirth": "1997-01-01",
+  "dateJoined": "01/2009",
+  "followingCount": 123,
+  "followersCount": 456
 }

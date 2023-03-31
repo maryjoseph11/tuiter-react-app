@@ -1,62 +1,90 @@
 import React from "react";
 import {useSelector} from "react-redux";
-import "./profile.css";
 import {Link} from "react-router-dom";
+import "./profile.css";
 
 const ProfileComponent = () => {
     const profile = useSelector(state => state.profile);
-    return (
-        <>
-
-            <div>
-                <div className="row">
-                    <div className="col-1">
-                        <span><i className="fa fa-arrow-left" aria-hidden="true"></i></span>
-                    </div>
-                    <div className="col-3">
-                        <div className="row">
-                            <span> {profile.firstName} {profile.lastName}</span>
+        return (
+            <>
+                <div>
+                    <div className="row">
+                        <div className="col-1">
+                            <Link to="/tuiter/home">
+                            <button type="button" className="btn-outline-dark wd-grey">
+                                Back
+                            </button>
+                            </Link>
                         </div>
-                        <div className="row">
-                            <span className="text-muted"> 1234 Tweets </span>
+
+                        <div className="col-6">
+                            <div className="row">
+                                <span className = "wd-tabs"> <h6>{profile.firstName + " " + profile.lastName}</h6></span>
+                            </div>
+
+                            <div className="row">
+                                <span className="wd-grey wd-tabs"> 1234 Tweets </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <img src={profile.bannerPicture} className="wd-bannerPicture" alt=""></img>
-            </div>
-            <div className="mt-2">
-                <img src={profile.profilePicture} className="wd-profilePicture" alt=""></img>
-            </div>
-            <div>
-                <div className="row">
-                    <span> {profile.firstName} {profile.lastName}</span>
-                    <span> @{profile.handle} </span>
-                    <span className="mt-2"> {profile.bio}</span>
-                    <div className="row mt-2">
-                        <div className="col-3">
-                            <i className="fa fa-solid fa-location-arrow"></i><span > {profile.location} </span>
-                        </div>
-                        <div className="col-4">
-                            <i className="fa fa-solid fa-calendar"></i><span> Born {profile.dateOfBirth} </span>
-                        </div>
-                        <div className="col-3">
-                            <i className="fa fa-solid fa-briefcase"></i><span> Joined {profile.dateJoined} </span>
-                        </div>
-                    </div>
-                    <div className="row mt-2">
-                        <div className="col-3">
-                            <span>  {profile.followingCount}</span><span> Following</span>
-                        </div>
-                        <div className="col-3">
-                            <span>  {profile.followersCount} </span><span> Followers</span>
-                        </div>
+
+                <div>
+                    <img src={profile.bannerPicture} className="wd-banner"></img>
+                </div>
+
+                <div className="mt-2">
+                    <div>
+                    <img src={profile.profilePicture} className="wd-profile"></img>
                     </div>
 
+                    <div>
+                    <Link to="/tuiter/edit-profile">
+                    <button type="button" className="btn-outline-dark wd-grey float-end">
+                        Edit Profile
+                    </button>
+                    </Link>
+                    </div>
                 </div>
-            </div>
-        </>
-    );
+
+                <div>
+                    <div className="row">
+                        <span> <h5>{profile.firstName + " " + profile.lastName}</h5></span>
+                        <span className="wd-grey"> @{profile.handle} </span>
+                        <span className="mt-2"> {profile.bio}</span>
+
+                        <div className="row mt-4">
+                            <div className="col-3 wd-padding">
+                                <i className="bi bi-geo-alt-fill"></i>
+                                <span className="wd-grey"> {profile.location}</span>
+                            </div>
+
+                            <div className="col-4 wd-padding">
+                                <i className="bi bi-calendar3"></i>
+                                <span className="wd-grey"> D.O.B {profile.dateOfBirth} </span>
+                            </div>
+
+                            <div className="col-3 wd-padding">
+                                <i className="bi bi-briefcase-fill"></i>
+                                <span className="wd-grey"> {profile.dateJoined} </span>
+                            </div>
+                        </div>
+
+                        <div className="row mt-4">
+                            <div className="col-3 wd-padding">
+                                <span> {profile.followingCount}</span>
+                                <span className="wd-grey"> Following</span>
+                            </div>
+
+                            <div className="col-3 wd-padding">
+                                <span>{profile.followersCount}</span>
+                                <span className="wd-grey"> Followers</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </>
+        );
 }
 export default ProfileComponent;
