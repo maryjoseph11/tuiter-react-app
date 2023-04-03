@@ -2,6 +2,7 @@ import React from "react";
 import {useDispatch} from "react-redux";
 import {useState} from 'react';
 import {updateLike} from "./tuits-reducer";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 const TuitStats = ({tuit}) => {
     const [isActive, setIsActive] = useState(false);
 
@@ -12,7 +13,10 @@ const TuitStats = ({tuit}) => {
                   updateLike({
                     ...tuit,
                     liked: !tuit.liked,
-                    likes: tuit.liked ? tuit.stats.likes - 1 : tuit.stats.likes + 1,
+                    stats:{
+                        ...tuit.stats,likes: tuit.liked ? tuit.stats.likes - 1 : tuit.stats.likes + 1
+                    }
+
                   })
                 );
     }
@@ -22,22 +26,38 @@ const TuitStats = ({tuit}) => {
     <div className="row mt-2">
         <div className="col">
             <i class="bi bi-chat me-2"></i>
-            {tuit.stats.comments}
+            {tuit.replies}
         </div>
         <div className="col">
             <i class="bi bi-arrow-repeat"></i>
-            {tuit.stats.retuits}
+            {tuit.retuits}
         </div>
+
         <div className="col">
-            <i onClick={likeClickHandler}
-            className='bi bi-heart me-2'
-            style={{"color": `${(tuit.liked === true) ? "red" : "gray"}`}}></i>
-            <span className='ms-1 wd-gray-color'>{tuit.stats.likes}</span>
+              {tuit.likes}
+                  <i onClick={() => dispatch(updateTuitThunk({
+                    ...tuit,
+                    likes: tuit.likes + 1
+                  }))} className="bi bi-heart-fill me-2 text-danger">
+                  </i>
         </div>
+
+        <div className = "col">
+             {tuit.dislikes}
+                <i onClick={() => dispatch(updateTuitThunk({
+                    ...tuit,
+                    dislikes: tuit.dislikes + 1
+                }))} className="bi bi-hand-thumbs-down">
+                </i>
+
+        </div>
+
         <div className="col">
             <i class="bi bi-share me-2"></i>
         </div>
-    </div>)
+    </div>
+
+    )
 }
 
 export default TuitStats;

@@ -2,12 +2,12 @@ import React from "react";
 import './tuit.css';
 import TuitStats from "./TuitStats";
 import {useDispatch} from "react-redux";
-import {createTuit, deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = ({tuit}) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-      dispatch(deleteTuit(id));
+      dispatch(deleteTuitThunk(id));
     }
 
     return(
@@ -16,7 +16,7 @@ const TuitItem = ({tuit}) => {
                 <tr>
                     <td className="align-text-top">
                         <img className="rounded-circle wd-avatar-image"
-                             src={tuit['logo-image']}/>
+                             src={tuit.image}/>
                     </td>
                     <td className="ps-3" style={{width: '100%'}}>
                         <i className="bi bi-x-lg float-end"
@@ -29,7 +29,7 @@ const TuitItem = ({tuit}) => {
                         </div>
                         {
                             tuit.attachments && tuit.attachments.image &&
-                            <img src={tuit.attachments.image} className="mt-2 wd-border-radius-20px"
+                            <img src={tuit.image} className="mt-2 wd-border-radius-20px"
                                  style={{width: "100%"}}/>
                         }
                         {
